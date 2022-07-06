@@ -1,0 +1,64 @@
+.page-header {
+  min-height: 879px;
+  background-color: $color-default-white;
+  background-image: url("../img/bg-promo-d.webp");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 120px;
+  position: relative;
+
+  @media (min-width: 1024px) and (min-resolution: 2dppx) {
+    background-image: url("../img/bg-promo-d@2x.webp");
+  }
+}
+
+.page-header__inner {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 30px 10px;
+}
+
+.page-header__btn {
+  font-size: 15px;
+  line-height: 18px;
+  color: $color-default-black;
+  padding: 10px 0;
+  border-bottom: 1px dashed $color-default-black;
+}
+
+.page-header__phone {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: $color-default-black;
+  padding-top: 19px;
+}
+
+.page-header__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.page-header__icon-scroll {
+  position: absolute;
+  fill: $color-default-white;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 174px;
+}
+
+.page-header__wrapper p {
+  position: absolute;
+  color: $color-default-white;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 257px;
+}
