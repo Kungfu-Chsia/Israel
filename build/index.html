@@ -19,7 +19,6 @@
   </head>
 
   <body>
-
     <header class="page-header">
       <div class="container">
         <div class="page-header__wrapper">
@@ -36,12 +35,39 @@
             <button class="page-header__btn btn" type="button" aria-label="перейти к заказу звонка">Заказать звонок</button>
           </div>
           <p>Учёба, путешествие и карьера <br>для еврейской молодёжи</p>
-          <svg class="page-header__icon-scroll" width="76" height="76">
+          <svg class="page-header__icon-scroll" width="76" height="132">
             <use xlink:href="img/sprite/sprite.svg#scroll"></use>
           </svg>
         </div>
       </div>
     </header>
+
+    <main>
+      <section class="about">
+        <div class="about-wrap container">
+          <h2>О программе</h2>
+          <p>&laquo;Маса&raquo;&nbsp;&mdash; совместный проект правительства Израиля и&nbsp;Еврейского агентства Сохнут. Более 250 учебных программ (60&nbsp;на русском) и&nbsp;возможность стажировки в&nbsp;Израиле. В&nbsp;течение освоения программ предусмотрен грант от&nbsp;4200 до&nbsp;8400$.</p>
+        </div>
+        <div class="about__video-wrap">
+          <div class="about__video-wrapper">
+            <picture>
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/guys-m.webp 1x, img/guys-m@2x.webp 2x">
+              <source type="image/webp" srcset="img/guys-d.webp 1x, img/guys-d@2x.webp 2x">
+              <!-- 1х: 870px; 2x: 1740px -->
+              <img class="about__img" src="img/guys-d.png" srcset="img/guys-d@2x.png 2x" alt="парни у костра" width="870" height="660"/>
+            </picture>
+            <button class="about__button" aria-label="перейти к просмотру видео">
+              <svg class="about__button-play" width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle opacity="0.32" cx="48" cy="48" r="48" fill="white"/>
+                <circle cx="48" cy="48" r="32" fill="white"/>
+                <path d="M58 47.5L43 57V38L58 47.5Z" fill="#1FC0FC"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+    </main>
 
 
     <script src="js/vendor.min.js"></script>

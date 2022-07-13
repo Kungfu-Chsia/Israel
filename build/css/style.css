@@ -781,7 +781,7 @@ a:hover {
 img,
 video {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   -o-object-fit: cover;
   object-fit: cover;
@@ -985,7 +985,6 @@ button,
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 120px;
   position: relative;
 }
 
@@ -1031,7 +1030,7 @@ button,
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  bottom: 174px;
+  bottom: 119px;
 }
 
 .page-header__wrapper p {
@@ -1047,6 +1046,42 @@ button,
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   bottom: 257px;
+}
+
+.about {
+  min-height: 753px;
+  background-color: #ffffff;
+  background-image: url("../img/about-watercolor_bg-d.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.about h2 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #1fc0fc;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.about p {
+  margin-bottom: 49px;
+}
+
+.about-wrap {
+  width: 67%;
+  text-align: center;
+}
+
+.about__img {
+  margin: 0  auto;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1066,6 +1101,10 @@ button,
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1024px) and (min-resolution: 2dppx) {
   .page-header {
     background-image: url("../img/bg-promo-d@2x.webp");
+  }
+
+  .about {
+    background-image: url("../img/about-watercolor_bg-d@2x.webp");
   }
 }
 
