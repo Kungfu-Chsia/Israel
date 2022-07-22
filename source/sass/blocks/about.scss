@@ -2,10 +2,11 @@
   min-height: 753px;
   background-color: $color-default-white;
   background-image: url("../img/about-watercolor_bg-d.webp");
-
+  background-position: 0 159px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   position: relative;
+  margin-bottom: 115px;
 
   @media (min-width: 1024px) and (min-resolution: 2dppx) {
     background-image: url("../img/about-watercolor_bg-d@2x.webp");
@@ -37,4 +38,17 @@
 
 .about__img {
   margin: 0  auto;
+}
+
+.about__video-wrapper {
+  position: relative;
+  background-color: $arrow-gradient;
+}
+
+.about__button {
+  position: absolute;
+  top: 34.5%;
+  background: transparent;
+  border: none;
+  left: 45%;
 }
