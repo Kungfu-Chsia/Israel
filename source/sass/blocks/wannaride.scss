@@ -1,0 +1,84 @@
+.wannaride {
+  min-height: 594px;
+  background-color: $color-default-white;
+  background-image: url("../img/girl-flag-bg-d.webp");
+  background-position: top  12px right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+
+  @media (min-width: 1024px) and (min-resolution: 2dppx) {
+    background-image: url("../img/girl-flag-bg-d@2x.webp");
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../img/backpack-d.png");
+    background-repeat: no-repeat;
+    width: 167px;
+    height: 226px;
+    top: 25%;
+    left: 0;
+  }
+}
+
+.wannaride h2 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: start;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: $header-color;
+  margin-bottom: 23px;
+}
+
+.wannaride p {
+  font-size: 17px;
+  line-height: 29px;
+  opacity: 0.87;
+  margin-bottom: 63px;
+  width: 43%;
+}
+
+.wannaride__inner {
+  padding-left: 209px;
+  padding-top: 190px;
+}
+
+.wannaride__input input {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  font-variant: small-caps;
+  color: $color-default-black;
+  padding: 19px 40px 18px;
+  border: 2px solid $light-grey;
+  border-right: 0;
+  border-radius: 80px;
+  width: 307px;
+}
+
+.wannaride__btn {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  font-variant: small-caps;
+  color: $color-default-white;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  padding: 20px 40px;
+  background: $arrow-gradient;
+  border-radius: 80px;
+  margin: 0;
+  position: absolute;
+  left: 261px;
+}
+
+.wannaride__form {
+  display: flex;
+  position: relative;
+}

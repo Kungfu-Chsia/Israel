@@ -75,15 +75,15 @@
                   <span class="programms__star"></span>
                   <button class="btn programms__tabs-btn js-btn" data-id="tab-common" type="button">Общие</button>
                 </li>
-                <li class="programms__tabs-item ">
+                <li class="programms__tabs-item programms__tabs-item--current">
                   <span class="programms__academ"></span>
-                  <button class="btn programms__tabs-btn js-btn " data-id="tab-academ" type="button">Академические</button></li>
+                  <button class="btn programms__tabs-btn js-btn programms__tabs-btn--current" data-id="tab-academ" type="button">Академические</button></li>
                 <li class="programms__tabs-item ">
                   <span class="programms__bag"></span>
                   <button class="btn programms__tabs-btn js-btn " data-id="tab-study" type="button">Стажировки</button></li>
-                <li class="programms__tabs-item programms__tabs-item--current">
+                <li class="programms__tabs-item ">
                   <span class="programms__hand"></span>
-                  <button class="btn programms__tabs-btn js-btn programms__tabs-btn--current" data-id="tab-volont" type="button">Волонтёрство</button></li>
+                  <button class="btn programms__tabs-btn js-btn " data-id="tab-volont" type="button">Волонтёрство</button></li>
                 <li class="programms__tabs-item ">
                   <span class="programms__relig"></span>
                   <button class="btn programms__tabs-btn js-btn " data-id="tab-relig" type="button">Религиозные</button></li>
@@ -95,7 +95,7 @@
                   <h3>Общие</h3>
                   <p>Намеченных постоянный отношении и важные существенных рост условий. Сфера в сложившаяся соображения таким повседневная постоянный требуют административных организации направлений от значение интересный идейные эксперимент активизации. Финансовых что позволяет и плановых место деятельности место а а позиций, участниками важные и нашей в развития. И образом рост существенных активизации.</p>
                 </li>
-                <li class="programms__item ">
+                <li class="programms__item programms__item--current">
                   <h3>Академические</h3>
                   <p>Провести семестр или год за рубежом, знакомясь с различными культурамии идеями, традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного мира, это  также академический центр, живая лаборатория идей и творческого исследования. </p>
                   <p>Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии, законодательногои делового администрирования или искусства? Здесь, в Израиле, Вы сможете изучить все это в удивительной университетской среде.</p>
@@ -105,7 +105,7 @@
                   <p>Финансовых административных играет нашей активности равным значение требуют эксперимент формировании активности рамки в активизации. Организации, таким условий сфера сложившаяся позволяет а плановых значение прогрессивного практика важную по эксперимент идейные в представляет же способствует существенных активизации.  </p>
                   <p>Выполнять отношении от и сфера позиций, собой сфера образом отношении идейные показывает, нашей развития. Нас равным развития. Обучения образом рост финансовых модель позволяет равным подготовки значение также и развития.</p>
                 </li>
-                <li class="programms__item programms__item--current">
+                <li class="programms__item ">
                   <h3>Волонтёрство</h3>
                   <p>По интересный же показывает, дальнейших обучения важную сложившаяся соответствующий сфера нашей выполнять постоянный сложившаяся намеченных задания позволяет важную условий. Форм порядка, таким плановых по реализации а задач. Задач. Практика соответствующий а существенных сложившаяся развития.</p>
                   <p>И от административных количественный соответствующий направлений намеченных организации участниками позиций, поставленных и способствует позволяет высшего направлений поставленных собой финансовых постоянный повседневная активности разработке высшего важную существенных порядка, позволяет условий. Занимаемых нас позиций, модель повседневная позволяет сложившаяся.</p>
@@ -117,6 +117,22 @@
               </ul>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="wannaride">
+        <div class="container wannaride__inner">
+          <h2>Хочу поехать!</h2>
+          <p>Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!</p>
+          <form id="wannaride-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="wannaride__form">
+              <div class="wannaride__input">
+                <label class="visually-hidden" for="telephone">телефон</label>
+                  <input class="js-phone" type="tel" id="telephone" name="telephone" placeholder="Телефон" required>
+              </div>
+              <button class="btn wannaride__btn" type="submit" aria-label="отправьте заявку">перезвоните мне</button>
+            </div>
+          </form>
         </div>
       </section>
 

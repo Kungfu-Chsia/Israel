@@ -953,7 +953,7 @@ button,
   background-repeat: no-repeat;
   width: 680px;
   height: 426px;
-  bottom: 129px;
+  bottom: 653px;
   right: 0; }
 
 .programms h2 {
@@ -1135,6 +1135,84 @@ button,
   font-size: 15px;
   line-height: 26px;
   opacity: 0.87; }
+
+.wannaride {
+  min-height: 594px;
+  background-color: #ffffff;
+  background-image: url("../img/girl-flag-bg-d.webp");
+  background-position: top  12px right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative; }
+  @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1024px) and (min-resolution: 2dppx) {
+    .wannaride {
+      background-image: url("../img/girl-flag-bg-d@2x.webp"); } }
+  .wannaride::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../img/backpack-d.png");
+    background-repeat: no-repeat;
+    width: 167px;
+    height: 226px;
+    top: 25%;
+    left: 0; }
+
+.wannaride h2 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: start;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #1fc0fc;
+  margin-bottom: 23px; }
+
+.wannaride p {
+  font-size: 17px;
+  line-height: 29px;
+  opacity: 0.87;
+  margin-bottom: 63px;
+  width: 43%; }
+
+.wannaride__inner {
+  padding-left: 209px;
+  padding-top: 190px; }
+
+.wannaride__input input {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  font-variant: small-caps;
+  color: #484848;
+  padding: 19px 40px 18px;
+  border: 2px solid #e3e3e3;
+  border-right: 0;
+  border-radius: 80px;
+  width: 307px; }
+
+.wannaride__btn {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  font-variant: small-caps;
+  color: #ffffff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  padding: 20px 40px;
+  background: -o-linear-gradient(341.58deg, #ffc341 20.46%, #ffd701 65.31%);
+  background: linear-gradient(108.42deg, #ffc341 20.46%, #ffd701 65.31%);
+  border-radius: 80px;
+  margin: 0;
+  position: absolute;
+  left: 261px; }
+
+.wannaride__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
