@@ -11,6 +11,15 @@
   @media (min-width: 1024px) and (min-resolution: 2dppx) {
     background-image: url("../img/about-watercolor_bg-d@2x.webp");
   }
+
+  @media (max-width: $desktop-width) {
+    background-image: url("../img/about-watercolor_bg-m.webp");
+    background-position: 0 200px;
+
+    @media (max-width: $desktop-width) and (min-resolution: 2dppx) {
+      background-image: url("../img/about-watercolor_bg-m@2x.webp");
+    }
+  }
 }
 
 .about h2 {
@@ -25,10 +34,23 @@
   color: $header-color;
   margin-top: 16px;
   margin-bottom: 24px;
+
+  @media (max-width: $desktop-width) {
+    font-size: 32px;
+    line-height: 39px;
+    margin-top: 27px;
+  }
 }
 
 .about p {
   margin-bottom: 49px;
+
+  @media (max-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: start;
+    margin-bottom: 22px;
+  }
 }
 
 .about-wrap {
@@ -51,4 +73,14 @@
   background: transparent;
   border: none;
   left: 45%;
+
+  @media (max-width: $desktop-width) {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 31.5%;
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+  }
 }

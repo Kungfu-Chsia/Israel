@@ -25,10 +25,11 @@
           <div class="page-header__inner">
             <div class="page-header__logo">
               <picture>
-                <source type="image/webp" media="(max-width: 1023px)" srcset="img/logo-color-m.webp 1x, img/logo-color-d@2x.webp 2x">
+                <source media="(max-width: 1023px)" type="image/webp" srcset="img/logo-color-m.webp 1x, img/logo-color-m@2x.webp 2x">
+                <source media="(max-width: 1023px)" srcset="img/logo-color-m.jpg 1x, img/logo-color-m@2x.jpg 2x">
                 <source type="image/webp" srcset="img/logo-color-d.webp 1x, img/logo-color-d@2x.webp 2x">
                 <!-- 1х: 137px; 2x: 274px -->
-                <img src="img/logo-color-d.jpeg" srcset="img/logo-color-d@2x.jpeg 2x" alt="logotype" width="137" height="48"/>
+                <img src="img/logo-color-d.jpg" srcset="img/logo-color-d@2x.jpg 2x" alt="logotype" width="137" height="48"/>
               </picture>
             </div>
             <a class="page-header__phone" href="tel:897226216581" aria-label="контактный телефон">+ (972) 2 – 621 – 6581</a>
@@ -119,25 +120,7 @@
           </div>
         </div>
       </section>
-
-      <section class="wannaride">
-        <div class="container wannaride__inner">
-          <h2>Хочу поехать!</h2>
-          <p>Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!</p>
-          <form id="wannaride-form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="wannaride__form">
-              <div class="wannaride__input">
-                <label class="visually-hidden" for="telephone">телефон</label>
-                  <input class="js-phone" type="tel" id="telephone" name="telephone" placeholder="Телефон" required>
-              </div>
-              <button class="btn wannaride__btn" type="submit" aria-label="отправьте заявку">перезвоните мне</button>
-            </div>
-          </form>
-        </div>
-      </section>
-
     </main>
-
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

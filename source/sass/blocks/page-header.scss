@@ -10,6 +10,16 @@
   @media (min-width: 1024px) and (min-resolution: 2dppx) {
     background-image: url("../img/bg-promo-d@2x.webp");
   }
+
+  @media (max-width: 767px) {
+    min-height: 605px;
+    background-position: 0 31px;
+    background-image: url("../img/bg-promo-m.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-promo-m@2x.png");
+    }
+  }
 }
 
 .page-header__inner {
@@ -17,14 +27,31 @@
   justify-content: space-between;
   position: relative;
   padding: 30px 10px;
+
+  @media (max-width: $desktop-width) {
+    flex-direction: column;
+    text-align: end;
+    padding: 0;
+  }
 }
 
 .page-header__btn {
   font-size: 15px;
   line-height: 18px;
+  font-weight: 500;
   color: $color-default-black;
   padding: 10px 0;
+  font-variant: small-caps;
+  text-transform: uppercase;
   border-bottom: 1px dashed $color-default-black;
+
+  @media (max-width: $desktop-width) {
+    align-self: flex-end;
+    font-size: 13px;
+    line-height: 15px;
+    padding-top: 0;
+    padding-bottom: 1px;
+  }
 }
 
 .page-header__phone {
@@ -33,12 +60,25 @@
   line-height: 18px;
   color: $color-default-black;
   padding-top: 19px;
+
+  @media (max-width: $desktop-width) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 
 .page-header__logo {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (max-width: $desktop-width) {
+    left: 68px;
+    top: 20px;
+    width: 120px;
+    height: 42px;
+  }
 }
 
 .page-header__icon-scroll {
@@ -60,6 +100,13 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 257px;
+
+  @media (max-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 24px;
+    width: 100%;
+    bottom: 202px;
+  }
 }
 
 .page-header__scroll {
@@ -72,4 +119,8 @@
   bottom: 119px;
   transform: translateX(-50%);
   left: 50%;
+
+  @media (max-width: $desktop-width) {
+    bottom: 58px;
+  }
 }
