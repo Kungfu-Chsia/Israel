@@ -15,6 +15,7 @@
   @media (max-width: $desktop-width) {
     background-image: url("../img/about-watercolor_bg-m.webp");
     background-position: 0 200px;
+    min-height: 517px;
 
     @media (max-width: $desktop-width) and (min-resolution: 2dppx) {
       background-image: url("../img/about-watercolor_bg-m@2x.webp");

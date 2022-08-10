@@ -45,12 +45,17 @@
 
   @media (max-width: $desktop-width) {
     flex-direction: column;
-    padding: 0 55px;
+    // padding: 0 55px;
+    padding: 0;
   }
 }
 
 .programms__tabs {
   width: 93%;
+
+  @media (max-width: $desktop-width) {
+    width: auto;
+  }
 }
 
 .programms__tabs-list {
@@ -60,7 +65,7 @@
     padding-left: 0;
     display: flex;
     overflow-x: scroll;
-    margin: 0 -83px;
+    // margin: 0 -83px;
   }
 
   @media (max-width: $tablet-width) {
@@ -170,7 +175,7 @@
 
   &--current {
     display: block;
-    width: 83%;
+    // width: 83%;
 
     &:nth-child(1) {
       width: 78%;
@@ -179,6 +184,11 @@
     &:nth-child(2) {
       margin-left: -107px;
       width: 85%;
+
+      @media (max-width: $desktop-width) {
+        margin-left: 0;
+        width: 100%;
+      }
     }
 
     &:nth-child(3) {
@@ -230,8 +240,6 @@
 }
 
 .programms__tabs-item {
-  width: 205px;
-
   &--current {
     background: $arrow-gradient;
     position: relative;
